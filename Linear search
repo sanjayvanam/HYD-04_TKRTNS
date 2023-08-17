@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a[10]={1,2,3,4,5,6,7,8,9,10}, i, num, index;
+    cout<<"Enter a Number to Search: ";
+    cin>>num;
+    for(i=0; i<10; i++)
+    {
+        if(a[i]==num)
+        {
+            index = i;
+            break;
+        }
+    }
+    cout<<"Found at Index No."<<index;
+    return 0;
+}
